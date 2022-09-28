@@ -8,7 +8,7 @@ public class Ejercicio4 {
         Scanner sc = new Scanner(System.in);
 
         //Declaro las variables
-        boolean lluvia, tarea, biblio;
+        boolean lluvia, tarea, biblio, salir;
 
         //Le preguntamos al ususario si llueve, si ha hecho la tarea y si tiene que ir a la biblioteca
         System.out.println("¿Está lloviendo? Conteste con true o false");
@@ -18,7 +18,9 @@ public class Ejercicio4 {
         System.out.println("¿Tienes que ir a la biblioteca? Conteste con true o false");
         biblio= sc.nextBoolean();
 
-        System.out.println(!lluvia&&tarea || biblio);
+        // si no está lloviendo y he hecho la tarea o no tengo que ir a la biblioteca puedo salir
+        salir= (!lluvia&&tarea || biblio);
+        System.out.println("¿Puedes salir? "+salir);
 
 
 
