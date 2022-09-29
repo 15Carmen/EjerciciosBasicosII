@@ -20,15 +20,12 @@ public class Ejercicio5 {
         nota3= sc.nextInt();
 
         //Calculamos la media de las notas casteando los numeros enteros para que la nota pueda darnos decimales
-        media=((double) nota1+(double) nota2+(double) nota3)/3;
+        media=(double) (nota1+nota2+ nota3)/3;
 
         //Imprimimos por consola la media
         System.out.println("Tu media del curso es: "+media);
 
-        //Ahora calculamos la media que aparecerá en el voletín de calificaciones
-        media=(nota1+nota2+nota3)/3;
-
-        //Imprimimos por consola la media del boletín
-        System.out.println("En su boletín tendrá: "+media);
+        //Imprimimos por consola la media del boletín casteando la media a int para no tener decimales
+        System.out.println("En su boletín tendrá: "+(int)media);
     }
 }
